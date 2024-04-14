@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подсчёт стоимости напольного покрытия</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="calc">Калькулятор цен</h2>
+            <div class="form-holder">
+                <form action="">
+                    <select class="input" id="choose__form" onchange="ch()">
+                        <option value="S рулона линолиума">Линолиум</option>
+                        <option value="S упаковки плиток">ПВХ-плитка</option>
+                        <option value="S ламината (прямая кладка)">Ламинат (прямая)</option>
+                        <option value="S ламината (диагональная)">Ламинат (диагональная)</option>
+                        <option value="S ламината (ёлочкой)">Ламинат (ёлочкой)</option>
+                        <option value="Ширина ковролина">Ковролин</option>
+                        <option value="S плиток в упаковке (классическая)">Керамическая плитка (классическая)</option>
+                        <option value="S плиток в упаковке (диагональная)">Керамическая плитка (диагональная)</option>
+                        <option value="S паркетных досок (вдоль)">Паркет (вдоль)</option>
+                        <option value="S паркетных досок (ёлочкой)">Паркет (ёлочкой)</option>
+                        <option value="S покрытия (прямой)">Пробковые покрытия (по прямой)</option>
+                        <option value="S покрытия (диагонали)">Пробковые покрытия (по диагонали)</option>
+                    </select>
+                </form>
+                <div class="input" id="input__place"></div>
+                <input type="number" class="input" id="inp" value="" placeholder="Введите данные" />
+                <input type="number" class="input" id="inp__2" value="" placeholder="Введите площадь комнаты " />
+                <p class="resu" id="res"></p>
+            </div>
+            <button class="submit-btn" onclick="calculate()">Посчитать</button>
+        </div>
+        <div class="login slide-up">
+        </div>
+    </div>
+    <!-- Подключение файла со скриптом -->
+    <script src="/js/JavaScript.js"></script>
+</body>
+
+</html>
+
